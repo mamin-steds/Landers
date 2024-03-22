@@ -1,0 +1,104 @@
+animations {
+  id: "alien"
+  images {
+    image: "/graphics/alien/alien1.png"
+  }
+  images {
+    image: "/graphics/alien/alien2.png"
+  }
+  images {
+    image: "/graphics/alien/alien3.png"
+  }
+  images {
+    image: "/graphics/alien/alien4.png"
+  }
+  images {
+    image: "/graphics/alien/alien5.png"
+  }
+  images {
+    image: "/graphics/alien/alien6.png"
+  }
+  images {
+    image: "/graphics/alien/alien7.png"
+  }
+  images {
+    image: "/graphics/alien/alien8.png"
+  }
+  images {
+    image: "/graphics/alien/alien9.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "missile"
+  images {
+    image: "/graphics/missile/missile1.png"
+  }
+  images {
+    image: "/graphics/missile/missile2.png"
+  }
+  images {
+    image: "/graphics/missile/missile3.png"
+  }
+  images {
+    image: "/graphics/missile/missile4.png"
+  }
+  images {
+    image: "/graphics/missile/missile5.png"
+  }
+  images {
+    image: "/graphics/missile/missile6.png"
+  }
+  images {
+    image: "/graphics/missile/missile7.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 20
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "bank_left"
+  images {
+    image: "/graphics/ship/ship_bank_left1.png"
+  }
+  images {
+    image: "/graphics/ship/ship_bank_left2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "forward"
+  images {
+    image: "/graphics/ship/ship_forward1.png"
+  }
+  images {
+    image: "/graphics/ship/ship_forward2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "bank_right"
+  images {
+    image: "/graphics/ship/ship_bank_right1.png"
+  }
+  images {
+    image: "/graphics/ship/ship_bank_right2.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+margin: 0
+extrude_borders: 2
+inner_padding: 0

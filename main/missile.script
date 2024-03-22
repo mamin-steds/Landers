@@ -1,0 +1,31 @@
+local hit = hash("collision_response")
+
+function init(self)
+	-- speed of the missile
+	self.speed = 400
+end
+
+function update(self, dt)
+	-- if the missile has been fired, move it
+	local pos = go.get_position() 
+	if pos.x > 0 then
+		pos.y = pos.y + self.speed * dt
+
+		-- if the missile is off the screen, reload it
+		if pos.y > 640 then 
+			pos.x = -20
+			msg.post("player1", "reload_missile")
+		end
+		go.set_position(pos)
+	end
+end
+
+function on_message(self, message_id, message, sender)
+	-- id the missile has hit something, despawn it off-screen
+	if message_id == hit then
+		local pos = go.get_position() 
+		pos.x = -20
+		go.set_position(pos)
+		msg.post("player1", "reload_missile")
+	end
+end
